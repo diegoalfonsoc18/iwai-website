@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       {/* Dark overlay para legibilidad del texto */}
-      <div className="absolute inset-0 bg-dark/65" />
+      <div className="absolute inset-0 bg-dark/45" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
