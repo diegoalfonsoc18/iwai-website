@@ -30,9 +30,9 @@ const podcasts = [
 ];
 
 const fotos = [
-  { alt: "Taller liderazgo Bogotá", src: "/hero-iwai-workshop-final.jpg" },
+  { alt: "Taller liderazgo Bogotá", src: "/tallerLiderazgo.webp" },
   { alt: "Sesión de co-creación", src: "/sesionCoCreacion.webp" },
-  { alt: "Retiro estratégico", src: "/hero-iwai-workshop-final.jpg" },
+  { alt: "Retiro estratégico", src: "/retiroEstrategico.webp" },
 ];
 
 // Ícono podcast
