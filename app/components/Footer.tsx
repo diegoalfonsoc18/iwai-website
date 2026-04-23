@@ -64,7 +64,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-            Firma colombiana de consultoría organizacional. Nos integramos a tu
+            Firma de consultoría organizacional con presencia en Colombia y Argentina. Nos integramos a tu
             equipo para transformar desde adentro.
           </p>
           <p className="text-white/25 text-xs">
