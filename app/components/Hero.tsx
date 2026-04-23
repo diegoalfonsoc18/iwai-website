@@ -1,28 +1,20 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
 
-      {/* ── Background: replace the gradient with your photo ──────────────
-          Para producción: agrega /public/hero-bg.jpg y usa:
-          <Image src="/hero-bg.jpg" alt="" fill className="object-cover" priority />
-          con un <div className="absolute inset-0 bg-dark/60" /> encima.
-      ──────────────────────────────────────────────────────────────────── */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at 25% 60%, #1c2e18 0%, #0F0F0F 55%, #050505 100%)",
-        }}
+      {/* ── Background photo ──────────────────────────────────────────── */}
+      <Image
+        src="/hero-iwai-workshop-final.jpg"
+        alt="Taller corporativo Grupo IWAI"
+        fill
+        className="object-cover object-center"
+        priority
       />
 
-      {/* Subtle noise texture overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
-        }}
-      />
+      {/* Dark overlay para legibilidad del texto */}
+      <div className="absolute inset-0 bg-dark/65" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
