@@ -4,30 +4,42 @@ const lineas = [
     titulo: "Desarrollo Organizacional",
     descripcion:
       "Fortalecemos las capacidades internas alineando estructura, procesos y personas para alcanzar sus objetivos estratégicos de forma sostenible.",
-    tags: ["Estructura", "Procesos", "Alineación"],
-    destacada: false,
+    tags: [
+      { icono: "⬡", label: "Estructura" },
+      { icono: "⚙", label: "Procesos" },
+      { icono: "◈", label: "Alineación" },
+    ],
+    imagen: "/cardOne.webp",
   },
   {
     numero: "02",
     titulo: "Gestión del Cambio",
     descripcion:
       "Acompañamos transformaciones asegurando que las personas sean el centro del cambio. Lideramos procesos de transición con metodologías probadas.",
-    tags: ["Transformación", "Liderazgo", "Adopción"],
-    destacada: true,
+    tags: [
+      { icono: "↗", label: "Transformación" },
+      { icono: "◎", label: "Liderazgo" },
+      { icono: "✦", label: "Adopción" },
+    ],
+    imagen: "/cardTwo.webp",
   },
   {
     numero: "03",
     titulo: "Cultura y Clima Organizacional",
     descripcion:
       "Diagnosticamos e intervenimos la cultura para construir entornos de alto desempeño, bienestar y sentido de pertenencia.",
-    tags: ["Diagnóstico", "Bienestar", "Alto desempeño"],
-    destacada: false,
+    tags: [
+      { icono: "◉", label: "Diagnóstico" },
+      { icono: "♡", label: "Bienestar" },
+      { icono: "★", label: "Alto desempeño" },
+    ],
+    imagen: "/cargThree.webp",
   },
 ];
 
 export default function LineasDeTrabajo() {
   return (
-    <section id="lineas" className="bg-dark py-28 px-6">
+    <section id="lineas" className="py-28 px-6" style={{ backgroundColor: "#181818" }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -49,75 +61,50 @@ export default function LineasDeTrabajo() {
           </p>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid md:grid-cols-3 gap-5">
+        {/* Cards — 3 columnas horizontales */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {lineas.map((linea) => (
             <article
               key={linea.numero}
-              className={`relative rounded-3xl p-8 flex flex-col gap-6 group transition-all duration-300 hover:-translate-y-1 ${
-                linea.destacada
-                  ? "bg-lima"
-                  : "bg-white/5 border border-white/10 hover:border-lima/30"
-              }`}
+              className="relative rounded-2xl overflow-hidden h-[280px] flex items-end group cursor-pointer"
+              style={{ backgroundColor: "#1f1f1f" }}
             >
-              {/* Number */}
-              <span
-                className={`text-xs font-bold tracking-widest ${
-                  linea.destacada ? "text-dark/50" : "text-lima"
-                }`}
-              >
-                {linea.numero}
-              </span>
-
-              {/* Title */}
-              <h3
-                className={`text-xl font-bold leading-snug ${
-                  linea.destacada ? "text-dark" : "text-white"
-                }`}
-              >
-                {linea.titulo}
-              </h3>
-
-              {/* Description */}
-              <p
-                className={`text-sm leading-relaxed flex-1 ${
-                  linea.destacada ? "text-dark/65" : "text-white/45"
-                }`}
-              >
-                {linea.descripcion}
-              </p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {linea.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className={`text-xs font-medium px-3 py-1 rounded-full ${
-                      linea.destacada
-                        ? "bg-dark/10 text-dark/70"
-                        : "bg-white/10 text-white/50"
-                    }`}
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Imagen de fondo */}
+              <div className="absolute inset-0">
+                <img
+                  src={linea.imagen}
+                  alt={linea.titulo}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                {/* Gradient fade inferior */}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(to top, #1f1f1f 35%, #1f1f1faa 60%, transparent 100%)",
+                  }}
+                />
               </div>
 
-              {/* Arrow link */}
-              <div
-                className={`w-9 h-9 rounded-full flex items-center justify-center mt-1 transition-transform group-hover:translate-x-1 ${
-                  linea.destacada ? "bg-dark" : "bg-white/10"
-                }`}
-              >
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                  <path
-                    d="M2 11L11 2M11 2H4.5M11 2v6.5"
-                    stroke={linea.destacada ? "#C8FF3D" : "white"}
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              {/* Contenido */}
+              <div className="relative z-10 p-5 flex flex-col gap-2 w-full">
+                <span className="text-lima text-xs font-bold tracking-widest">
+                  {linea.numero}
+                </span>
+                <h3 className="text-white text-lg font-bold leading-snug">
+                  {linea.titulo}
+                </h3>
+                <div className="flex flex-wrap gap-1.5 mt-1">
+                  {linea.tags.map((tag) => (
+                    <span
+                      key={tag.label}
+                      className="flex items-center gap-1 text-[11px] font-medium text-white/60 bg-white/10 border border-white/10 px-2.5 py-1 rounded-full"
+                    >
+                      <span className="text-lima text-[9px]">{tag.icono}</span>
+                      {tag.label}
+                    </span>
+                  ))}
+                </div>
               </div>
             </article>
           ))}
