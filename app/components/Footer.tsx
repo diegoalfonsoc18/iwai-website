@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { label: "Líneas de Trabajo", href: "#lineas" },
   { label: "Nuestro Equipo", href: "#equipo" },
@@ -47,15 +49,15 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2.5">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect width="28" height="28" rx="6" fill="#C8FF3D" />
-              <path
-                d="M14 5v5M14 18v5M5 14h5M18 14h5M7.93 7.93l3.54 3.54M16.54 16.54l3.53 3.53M20.07 7.93l-3.53 3.54M11.46 16.54l-3.53 3.53"
-                stroke="#0F0F0F"
-                strokeWidth="2"
-                strokeLinecap="round"
+            <div className="w-[28px] h-[28px] rounded-[6px] bg-lima flex items-center justify-center overflow-hidden flex-shrink-0">
+              <Image
+                src="/iwaiBlackLogo.png"
+                alt="Grupo IWAI Consultores"
+                width={22}
+                height={22}
+                className="object-contain"
               />
-            </svg>
+            </div>
             <span className="text-lg font-bold text-white">IWAI</span>
             <span className="text-xs font-medium text-white/30 tracking-widest uppercase">
               Consultores
