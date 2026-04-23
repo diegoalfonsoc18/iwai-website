@@ -30,7 +30,7 @@ export default function Header() {
             />
           </div>
           <span className="text-lg font-bold tracking-tight text-dark">IWAI</span>
-          <span className="text-xs font-medium text-muted tracking-widest uppercase">Consultores</span>
+          <span className="text-xs font-medium text-muted tracking-widest uppercase">Consultores y Asesores Especializados</span>
         </Link>
 
         {/* Nav desktop */}
