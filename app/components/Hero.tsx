@@ -84,49 +84,50 @@ export default function Hero() {
             }}
           >
             {/* Card header */}
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-lima animate-pulse" />
-                <span className="text-xs text-white/50 font-medium">
-                  Servicios IWAI
-                </span>
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center gap-2.5">
+                <div className="w-7 h-7 rounded-lg bg-lima/15 flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-lima animate-pulse" />
+                </div>
+                <div>
+                  <p className="text-white text-xs font-semibold">Grupo IWAI</p>
+                  <p className="text-white/35 text-[10px]">Consultoría Organizacional</p>
+                </div>
               </div>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path
-                  d="M3 13L13 3M13 3H6M13 3v7"
-                  stroke="rgba(255,255,255,0.3)"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <span className="text-[10px] font-medium text-lima bg-lima/10 px-2.5 py-1 rounded-full">
+                Colombia
+              </span>
             </div>
 
-            {/* Big stat */}
-            <p className="text-lima text-5xl font-bold tracking-tight mb-1">
-              +50
-            </p>
-            <p className="text-white/40 text-sm mb-8">
-              Organizaciones acompañadas en Colombia
-            </p>
-
-            {/* Divider */}
-            <div className="border-t border-white/10 mb-6" />
-
-            {/* Mini stats */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* Items */}
+            <div className="flex flex-col gap-3">
               {[
-                { value: "10+", label: "Años de experiencia" },
-                { value: "95%", label: "Clientes satisfechos" },
-                { value: "3", label: "Líneas de trabajo" },
-                { value: "100%", label: "Integración real" },
+                {
+                  icon: "✦",
+                  valor: "95%",
+                  label: "de clientes satisfechos",
+                },
+                {
+                  icon: "✦",
+                  valor: "Sector público y privado",
+                  label: "organizaciones acompañadas",
+                },
+                {
+                  icon: "✦",
+                  valor: "+20 años",
+                  label: "de experiencia de nuestros expertos",
+                },
               ].map((s) => (
-                <div key={s.label} className="bg-white/5 rounded-2xl px-4 py-3">
-                  <p className="text-white font-bold text-lg">{s.value}</p>
-                  <p className="text-white/40 text-xs mt-0.5">{s.label}</p>
+                <div key={s.label} className="flex items-center gap-4 bg-white/5 hover:bg-white/8 transition-colors rounded-2xl px-4 py-3.5">
+                  <span className="text-lima text-xs flex-shrink-0">{s.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-white font-semibold text-sm">{s.valor}</p>
+                    <p className="text-white/40 text-xs mt-0.5 truncate">{s.label}</p>
+                  </div>
                 </div>
               ))}
             </div>
+
           </div>
         </div>
       </div>
