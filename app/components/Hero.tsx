@@ -6,7 +6,7 @@ export default function Hero() {
 
       {/* ── Background photo ──────────────────────────────────────────── */}
       <Image
-        src="/hero-iwai-workshop-final.jpg"
+        src="/hero.webp"
         alt="Taller corporativo Grupo IWAI"
         fill
         className="object-cover object-center"
