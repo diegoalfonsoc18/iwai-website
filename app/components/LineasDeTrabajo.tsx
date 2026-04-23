@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const lineas = [
   {
     numero: "01",
@@ -71,10 +73,11 @@ export default function LineasDeTrabajo() {
             >
               {/* Imagen de fondo */}
               <div className="absolute inset-0">
-                <img
+                <Image
                   src={linea.imagen}
                   alt={linea.titulo}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Gradient fade inferior */}
                 <div
