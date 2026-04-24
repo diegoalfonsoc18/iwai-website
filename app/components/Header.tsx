@@ -7,7 +7,7 @@ import { useState } from "react";
 const navLinks = [
   { label: "Líneas de Trabajo", href: "/lineas" },
   { label: "Nuestro Equipo", href: "/equipo" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 export default function Header() {
@@ -48,7 +48,7 @@ export default function Header() {
 
         {/* CTA desktop */}
         <Link
-          href="#contacto"
+          href="/contacto"
           className="hidden md:flex items-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-dark/80 transition-colors"
         >
           CONTACTO
@@ -94,7 +94,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="#contacto"
+            href="/contacto"
             onClick={() => setOpen(false)}
             className="flex items-center justify-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-dark/80 transition-colors mt-2"
           >
