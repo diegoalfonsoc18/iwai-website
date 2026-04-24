@@ -89,7 +89,7 @@ export default function ContactoPage() {
 
                   {/* WhatsApp */}
                   <a
-                    href="https://wa.me/573001234567"
+                    href="https://wa.me/573008536287"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-4 group"
