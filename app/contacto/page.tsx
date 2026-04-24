@@ -146,7 +146,7 @@ export default function ContactoPage() {
                   {[
                     {
                       nombre: "LinkedIn",
-                      href: "#",
+                      href: "https://www.linkedin.com/company/grupo-iwai-consultores/",
                       icono: (
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -248,9 +248,10 @@ export default function ContactoPage() {
                       Línea de interés
                     </label>
                     <select
+                      defaultValue=""
                       className="bg-surface border border-black/8 rounded-xl px-4 py-3 text-sm text-dark focus:outline-none focus:border-dark transition-colors appearance-none"
                     >
-                      <option value="" disabled selected>Selecciona una opción</option>
+                      <option value="" disabled>Selecciona una opción</option>
                       {motivos.map((m) => (
                         <option key={m} value={m}>{m}</option>
                       ))}

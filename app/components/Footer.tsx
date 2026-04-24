@@ -104,13 +104,18 @@ export default function Footer() {
             </li>
             <li>Colombia</li>
             <li className="flex gap-4 pt-2">
-              {["LinkedIn", "Instagram"].map((red) => (
+              {[
+                { label: "LinkedIn", href: "https://www.linkedin.com/company/grupo-iwai-consultores/" },
+                { label: "Instagram", href: "#" },
+              ].map((red) => (
                 <a
-                  key={red}
-                  href="#"
+                  key={red.label}
+                  href={red.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-full hover:border-lima/40 hover:text-lima transition-colors"
                 >
-                  {red}
+                  {red.label}
                 </a>
               ))}
             </li>
