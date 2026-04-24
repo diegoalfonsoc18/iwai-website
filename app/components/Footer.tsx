@@ -27,7 +27,7 @@ export default function Footer() {
             href="mailto:contacto@grupoiwaiconsultores.com"
             className="flex-shrink-0 inline-flex items-center gap-3 bg-lima text-dark font-bold px-8 py-4 rounded-full hover:bg-lima/80 transition-colors whitespace-nowrap"
           >
-            AGENDAR CONSULTA
+            CONVERSEMOS
             <span className="w-6 h-6 bg-dark rounded-full flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                 <path
@@ -58,10 +58,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-            <span className="text-lg font-bold text-white">IWAI</span>
-            <span className="text-xs font-medium text-white/30 tracking-widest uppercase">
-              Consultores
-            </span>
+            <span className="text-lg font-bold text-white">Grupo IWAI Consultores</span>
           </div>
           <p className="text-white/40 text-sm leading-relaxed max-w-xs">
             Firma de consultoría organizacional con presencia en Colombia y Argentina. Nos integramos a tu
