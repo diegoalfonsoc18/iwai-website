@@ -1,15 +1,23 @@
-const valores = [
+const enfoque = [
   {
-    titulo: "Propósito",
-    desc: "Creemos que las organizaciones saludables transforman sociedades. Ese propósito nos mueve.",
+    numero: "01",
+    titulo: "Gobernanza y Arquitectura Organizacional",
+    desc: "Diseñamos estructuras claras y procesos que sostienen la estrategia.",
   },
   {
-    titulo: "Integración",
-    desc: "No llegamos a dar recomendaciones. Nos quedamos a construir junto a tu equipo.",
+    numero: "02",
+    titulo: "Relaciones Laborales Estratégicas",
+    desc: "Promovemos el diálogo responsable y la prevención del conflicto para garantizar estabilidad.",
   },
   {
-    titulo: "Rigor",
-    desc: "Combinamos ciencias del comportamiento, gestión estratégica y práctica de campo.",
+    numero: "03",
+    titulo: "Organizaciones Saludables y Cultura Ética",
+    desc: "Impulsamos el bienestar institucional y el liderazgo consciente para un desempeño sostenible.",
+  },
+  {
+    numero: "04",
+    titulo: "Servicios Actuariales",
+    desc: "Facilitamos la toma de decisiones basadas en evidencia y una gestión rigurosa del riesgo.",
   },
 ];
 
@@ -28,22 +36,21 @@ export default function SobreNosotros() {
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-dark leading-tight">
-              Una firma colombiana con ADN de transformación
+              Aliados que trabajan hombro a hombro en la ejecución.
             </h2>
           </div>
           <div className="flex flex-col gap-5 lg:pt-4">
-            <p className="text-muted text-lg leading-relaxed">
-              Grupo IWAI nació de la convicción de que las organizaciones
-              colombianas necesitan acompañamiento real, no diagnósticos que
-              quedan en cajones.
+            <p className="text-muted leading-relaxed">
+              En Grupo IWAI entendemos que las instituciones sólidas no se construyen desde la fragmentación, sino a través de la estructura, el liderazgo y el rigor técnico.
             </p>
             <p className="text-muted leading-relaxed">
-              Nuestro equipo está conformado por consultores con experiencia en
-              los sectores público, privado y sin ánimo de lucro, unidos por el
-              mismo propósito: hacer que las transformaciones ocurran de verdad.
+              Acompañamos a organizaciones públicas y privadas que operan en entornos complejos y que necesitan más que una asesoría técnica: necesitan aliados que trabajen hombro a hombro en la ejecución.
+            </p>
+            <p className="text-dark font-semibold text-sm leading-relaxed">
+              No diseñamos documentos; diseñamos estructuras que funcionan.
             </p>
             <a
-              href="#contacto"
+              href="/equipo"
               className="inline-flex items-center gap-2 text-dark font-semibold text-sm hover:text-lima transition-colors"
             >
               Conoce al equipo
@@ -54,23 +61,43 @@ export default function SobreNosotros() {
           </div>
         </div>
 
-        {/* Values row */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {valores.map((v, i) => (
+        {/* Enfoque row */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {enfoque.map((item) => (
             <div
-              key={v.titulo}
-              className="bg-white rounded-3xl p-8 border border-black/5 hover:border-lima/40 transition-colors"
+              key={item.numero}
+              className="bg-white rounded-3xl p-7 border border-black/5 hover:border-lima/40 transition-colors flex flex-col gap-3"
             >
               <span className="text-xs font-bold text-lima tracking-widest">
-                0{i + 1}
+                {item.numero}
               </span>
-              <h3 className="text-xl font-bold text-dark mt-3 mb-3">
-                {v.titulo}
+              <h3 className="text-base font-bold text-dark leading-snug">
+                {item.titulo}
               </h3>
-              <p className="text-muted text-sm leading-relaxed">{v.desc}</p>
+              <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
+
+        {/* Cierre */}
+        <div className="mt-14 bg-dark rounded-3xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-white text-lg font-semibold max-w-xl leading-relaxed">
+            Cuando la complejidad exige más que asesoría,{" "}
+            <span className="text-lima">empieza una alianza real con IWAI.</span>
+          </p>
+          <a
+            href="/contacto"
+            className="flex-shrink-0 inline-flex items-center gap-2 bg-lima text-dark font-bold text-sm px-6 py-3.5 rounded-full hover:bg-lima/80 transition-colors"
+          >
+            CONVERSEMOS
+            <span className="w-5 h-5 bg-dark rounded-full flex items-center justify-center">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#C8FF3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+
       </div>
     </section>
   );
