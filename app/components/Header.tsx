@@ -96,9 +96,14 @@ export default function Header() {
           <Link
             href="#contacto"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-3 rounded-full hover:bg-dark/80 transition-colors mt-2"
+            className="flex items-center justify-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-dark/80 transition-colors mt-2"
           >
-            AGENDAR CONSULTA
+            CONTACTO
+            <span className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
           </Link>
         </nav>
       </div>
