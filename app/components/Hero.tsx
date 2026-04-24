@@ -31,7 +31,7 @@ export default function Hero() {
           </div>
 
           {/* Headline — "integramos" inside outlined oval (like reference) */}
-          <h1 className="text-5xl lg:text-[3.75rem] font-bold text-white leading-[1.12]">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] font-bold text-white leading-[1.12]">
             Nos{" "}
             <span className="relative inline-block text-lima whitespace-nowrap">
               {/* Oval border */}

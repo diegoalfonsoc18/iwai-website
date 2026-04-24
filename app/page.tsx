@@ -6,6 +6,7 @@ import LineasDeTrabajo from "./components/LineasDeTrabajo";
 import MediaHub from "./components/MediaHub";
 import SobreNosotros from "./components/SobreNosotros";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <SobreNosotros />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

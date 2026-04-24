@@ -29,8 +29,8 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="text-lg font-bold tracking-tight text-dark">IWAI</span>
-          <span className="text-xs font-medium text-muted tracking-widest uppercase">Consultores y Asesores Especializados</span>
+          <span className="text-lg font-bold tracking-tight text-dark">Grupo IWAI</span>
+          <span className="text-xs font-medium text-muted tracking-widest uppercase">Consultores</span>
         </Link>
 
         {/* Nav desktop */}
@@ -39,7 +39,7 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm text-muted hover:text-dark transition-colors"
+              className="text-base font-medium text-muted hover:text-dark transition-colors"
             >
               {link.label}
             </Link>

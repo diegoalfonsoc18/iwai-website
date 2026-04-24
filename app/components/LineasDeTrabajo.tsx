@@ -108,6 +108,17 @@ export default function LineasDeTrabajo() {
                     </span>
                   ))}
                 </div>
+
+                {/* CTA */}
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-lima hover:text-white transition-colors mt-1"
+                >
+                  Conocer más
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 10L10 2M10 2H4.5M10 2v5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
               </div>
             </article>
           ))}

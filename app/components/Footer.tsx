@@ -19,8 +19,8 @@ export default function Footer() {
               ¿Listo para transformar tu organización?
             </p>
             <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight max-w-lg">
-              Hablemos. La primera consulta es{" "}
-              <span className="text-lima">sin costo.</span>
+              Hablemos. Cada transformación empieza{" "}
+              <span className="text-lima">con una conversación.</span>
             </h2>
           </div>
           <a
