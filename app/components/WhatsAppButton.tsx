@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 // Reemplaza con el número real de IWAI (formato internacional sin + ni espacios)
-const WHATSAPP_NUMBER = "573001234567";
-const WHATSAPP_MESSAGE = "Hola, me gustaría agendar una consulta con Grupo IWAI.";
+const WHATSAPP_NUMBER = "573008536287";
+const WHATSAPP_MESSAGE =
+  "Hola, me gustaría agendar una consulta con Grupo IWAI.";
 
 export default function WhatsAppButton() {
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
@@ -14,8 +15,7 @@ export default function WhatsAppButton() {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between bg-dark/95 backdrop-blur-sm border border-white/10 rounded-2xl px-5 py-3 hover:border-lima/40 transition-all group shadow-2xl"
-        >
+          className="flex items-center justify-between bg-dark/95 backdrop-blur-sm border border-white/10 rounded-2xl px-5 py-3 hover:border-lima/40 transition-all group shadow-2xl">
           {/* Izquierda: logo + nombre */}
           <div className="flex items-center gap-3">
             <div className="w-7 h-7 rounded-lg bg-lima flex items-center justify-center overflow-hidden flex-shrink-0">
@@ -28,8 +28,12 @@ export default function WhatsAppButton() {
               />
             </div>
             <div>
-              <p className="text-white text-xs font-bold leading-none">Grupo IWAI Consultores</p>
-              <p className="text-white/40 text-[10px] mt-0.5">Consultoría Organizacional</p>
+              <p className="text-white text-xs font-bold leading-none">
+                Grupo IWAI Consultores
+              </p>
+              <p className="text-white/40 text-[10px] mt-0.5">
+                Consultoría Organizacional
+              </p>
             </div>
           </div>
 
