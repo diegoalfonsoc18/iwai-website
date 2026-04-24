@@ -96,7 +96,7 @@ export default function EquipoPage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-14 max-w-xl leading-tight">
-              Tres especialistas, una visión integrada.
+              Conoce a algunos de nuestros especialistas.
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
