@@ -41,7 +41,7 @@ export default function ContactoPage() {
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight max-w-3xl">
               Hablemos de tu{" "}
-              <span className="relative inline-block text-lima whitespace-nowrap">
+              <span className="relative inline-block text-lima whitespace-nowrap ml-3">
                 <span aria-hidden className="absolute -inset-x-4 -inset-y-1.5 border-2 border-lima rounded-full" />
                 proyecto
               </span>
