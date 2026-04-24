@@ -68,8 +68,8 @@ export default function ValorSection() {
               ))}
             </div>
             <div>
-              <p className="font-bold text-dark">+50 organizaciones</p>
-              <p className="text-sm text-muted">acompañadas en toda Colombia</p>
+              <p className="font-bold text-dark">Presencia en Colombia y Argentina</p>
+              <p className="text-sm text-muted">con alcance regional</p>
             </div>
           </div>
 
