@@ -79,25 +79,6 @@ export default function SobreNosotros() {
           ))}
         </div>
 
-        {/* Cierre */}
-        <div className="mt-14 bg-dark rounded-3xl px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-white text-lg font-semibold max-w-xl leading-relaxed">
-            Cuando la complejidad exige más que asesoría,{" "}
-            <span className="text-lima">empieza una alianza real con IWAI.</span>
-          </p>
-          <a
-            href="/contacto"
-            className="flex-shrink-0 inline-flex items-center gap-2 bg-lima text-dark font-bold text-sm px-6 py-3.5 rounded-full hover:bg-lima/80 transition-colors"
-          >
-            CONVERSEMOS
-            <span className="w-5 h-5 bg-dark rounded-full flex items-center justify-center">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#C8FF3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-          </a>
-        </div>
-
       </div>
     </section>
   );
