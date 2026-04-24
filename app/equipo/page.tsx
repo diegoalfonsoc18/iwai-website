@@ -92,7 +92,7 @@ export default function EquipoPage() {
             <div className="flex items-center gap-2 mb-5">
               <span className="w-6 h-0.5 bg-lima" />
               <span className="text-xs font-semibold text-white/40 tracking-widest uppercase">
-                Las personas detrás de IWAI
+                Grupo IWAI Consultores
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-14 max-w-xl leading-tight">
