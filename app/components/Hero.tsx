@@ -93,9 +93,9 @@ export default function Hero() {
                   <p className="text-white/35 text-[10px]">Consultoría y estrategia organizacional</p>
                 </div>
               </div>
-              <span className="text-[10px] font-medium text-lima bg-lima/10 px-2.5 py-1 rounded-full flex items-center gap-1">
-                <Image src="/colombia.webp" alt="Colombia" width={16} height={11} className="rounded-sm object-cover" />
-                <Image src="/argentina.webp" alt="Argentina" width={16} height={11} className="rounded-sm object-cover" />
+              <span className="bg-lima/10 px-2.5 py-1.5 rounded-full flex items-center gap-1.5">
+                <Image src="/colombia.webp" alt="Colombia" width={28} height={20} className="rounded object-cover" />
+                <Image src="/argentina.webp" alt="Argentina" width={28} height={20} className="rounded object-cover" />
               </span>
             </div>
 
