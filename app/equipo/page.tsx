@@ -5,31 +5,34 @@ import WhatsAppButton from "../components/WhatsAppButton";
 
 const equipo = [
   {
-    nombre: "Luz Nayibe López Suárez",
-    pais: "Colombia",
-    bandera: "🇨🇴",
-    imagen: "/NayibeLopez.webp",
-    descripcion:
-      "Especialista en desarrollo organizacional y gestión del cambio con amplia experiencia acompañando a organizaciones del sector público y privado en procesos de transformación institucional.",
-    areas: ["Arquitectura Organizacional", "Gestión del Cambio", "Sector Público"],
-  },
-  {
     nombre: "Soledad Cantero",
+    especialidad: "Transformación organizacional, cultura y gobernanza",
     pais: "Argentina",
     bandera: "🇦🇷",
     imagen: "/SoledadCantero.webp",
     descripcion:
-      "Experta en relaciones laborales y diálogo social con trayectoria en procesos de negociación colectiva y construcción de entornos laborales sostenibles en organizaciones de alto impacto.",
-    areas: ["Relaciones Laborales", "Diálogo Social", "Negociación Colectiva"],
+      "Ex viceministra de Ambiente en Argentina. Ha liderado procesos de política pública en escenarios de alta complejidad institucional, articulando gobernanza, cultura y liderazgo para impulsar transformaciones sistémicas con impacto real.",
+    areas: ["Transformación Organizacional", "Cultura", "Gobernanza"],
   },
   {
-    nombre: "Gloria Beatriz Gaviria Ramos",
+    nombre: "Luz Nayibe López Suárez",
+    especialidad: "Gobernanza pública y transformación institucional",
+    pais: "Colombia",
+    bandera: "🇨🇴",
+    imagen: "/NayibeLopez.webp",
+    descripcion:
+      "Más de 20 años liderando procesos estratégicos en entidades como la DIAN y el Ministerio de Comercio. Especialista en convertir estructuras y marcos normativos en resultados concretos, gestionando organizaciones complejas con foco en ejecución.",
+    areas: ["Gobernanza Pública", "Transformación Institucional", "Ejecución Estratégica"],
+  },
+  {
+    nombre: "Gloria Beatriz Gaviria",
+    especialidad: "Relaciones laborales, diálogo social y entorno internacional",
     pais: "Colombia",
     bandera: "🇨🇴",
     imagen: "/GloriaGaviria.webp",
     descripcion:
-      "Actuaria con expertise en valoración de pasivos laborales, análisis de riesgos y conectando el desempeño financiero con la sostenibilidad organizacional de largo plazo.",
-    areas: ["Servicios Actuariales", "Análisis de Riesgos", "Sostenibilidad"],
+      "Ex representante del Gobierno de Colombia ante la OIT. Referente en negociación, concertación y relaciones laborales en escenarios nacionales e internacionales, con capacidad para construir confianza en contextos de alta tensión institucional.",
+    areas: ["Relaciones Laborales", "Diálogo Social", "Entorno Internacional"],
   },
 ];
 
@@ -124,9 +127,14 @@ export default function EquipoPage() {
 
                   {/* Contenido */}
                   <div className="p-6 flex flex-col gap-4">
-                    <h3 className="text-white text-lg font-bold leading-snug">
-                      {persona.nombre}
-                    </h3>
+                    <div>
+                      <h3 className="text-white text-lg font-bold leading-snug">
+                        {persona.nombre}
+                      </h3>
+                      <p className="text-lima/70 text-xs font-medium mt-1 leading-snug">
+                        {persona.especialidad}
+                      </p>
+                    </div>
                     <p className="text-white/50 text-sm leading-relaxed">
                       {persona.descripcion}
                     </p>
