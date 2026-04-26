@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -120,14 +121,14 @@ export default function ContactoPage() {
                 </p>
                 <div className="flex gap-4">
                   {[
-                    { bandera: "🇨🇴", pais: "Colombia", ciudad: "Bogotá" },
-                    { bandera: "🇦🇷", pais: "Argentina", ciudad: "Buenos Aires" },
+                    { bandera: "/colombia.webp", pais: "Colombia", ciudad: "Bogotá" },
+                    { bandera: "/argentina.webp", pais: "Argentina", ciudad: "Buenos Aires" },
                   ].map((loc) => (
                     <div
                       key={loc.pais}
                       className="flex items-center gap-3 bg-white border border-black/5 rounded-2xl px-5 py-4"
                     >
-                      <span className="text-2xl">{loc.bandera}</span>
+                      <Image src={loc.bandera} alt={loc.pais} width={32} height={22} className="rounded-sm object-cover" />
                       <div>
                         <p className="text-dark font-bold text-xs">{loc.pais}</p>
                         <p className="text-muted text-xs">{loc.ciudad}</p>

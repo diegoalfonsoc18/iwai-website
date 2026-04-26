@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const items = [
   {
     icon: (
@@ -90,7 +92,13 @@ export default function ValorSection() {
                     <span className="text-xs font-bold text-dark/60 tracking-widest uppercase block">
                       Grupo IWAI
                     </span>
-                    <span className="text-[10px] text-dark/40">LATAM · 🇨🇴 Colombia · 🇦🇷 Argentina</span>
+                    <span className="text-[10px] text-dark/40 flex items-center gap-1">
+                      LATAM ·
+                      <Image src="/colombia.webp" alt="Colombia" width={14} height={10} className="rounded-sm object-cover inline" />
+                      Colombia ·
+                      <Image src="/argentina.webp" alt="Argentina" width={14} height={10} className="rounded-sm object-cover inline" />
+                      Argentina
+                    </span>
                   </div>
                 </div>
 

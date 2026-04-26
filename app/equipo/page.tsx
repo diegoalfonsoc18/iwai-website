@@ -8,7 +8,7 @@ const equipo = [
     nombre: "Soledad Cantero",
     especialidad: "Transformación Organizacional, Cultura y Gestión del Cambio",
     pais: "Argentina",
-    bandera: "🇦🇷",
+    bandera: "/argentina.webp",
     imagen: "/SoledadCantero.webp",
     descripcion:
       "Soledad ha ocupado posiciones de liderazgo en el ámbito público argentino, incluyendo el cargo de viceministra de Ambiente, donde participó en la formulación e implementación de políticas públicas en un contexto de alta complejidad institucional y social. Su trayectoria combina experiencia en gestión pública, análisis de políticas y transformación organizacional con más de veinte años acompañando procesos de cambio en organizaciones de la región. Entiende que los cambios sostenibles requieren coherencia entre política pública, cultura organizacional y liderazgo.",
@@ -18,7 +18,7 @@ const equipo = [
     nombre: "Luz Nayibe López Suárez",
     especialidad: "Gobernanza Pública, Transformación Institucional y Gestión Estratégica del Cambio",
     pais: "Colombia",
-    bandera: "🇨🇴",
+    bandera: "/colombia.webp",
     imagen: "/NayibeLopez.webp",
     descripcion:
       "Con más de veinte años de experiencia en el sector público, ha liderado procesos de transformación institucional en entidades de alta complejidad. Su paso por la DIAN y el Ministerio de Comercio, Industria y Turismo le ha permitido dirigir equipos numerosos, coordinar estructuras organizativas complejas y conducir procesos de cambio que requieren equilibrio entre visión estratégica y ejecución disciplinada. Cree que la gobernanza no es solo un marco normativo, sino una práctica cotidiana que fortalece instituciones cuando se construye con coherencia y sentido de propósito.",
@@ -28,7 +28,7 @@ const equipo = [
     nombre: "Gloria Beatriz Gaviria",
     especialidad: "Gobernanza Laboral, Diálogo Social y Relaciones Institucionales Internacionales",
     pais: "Colombia",
-    bandera: "🇨🇴",
+    bandera: "/colombia.webp",
     imagen: "/GloriaGaviria.webp",
     descripcion:
       "Ha dedicado su trayectoria al fortalecimiento del diálogo social y la construcción de relaciones laborales sostenibles. Su experiencia incluye roles estratégicos como Representante ante la OIT, jefe de Relaciones Exteriores y directora de Derechos Humanos del Ministerio de Trabajo de Colombia. Se ha consolidado como una de las voces con mayor conocimiento en diálogo social del país, con capacidad para construir consensos en contextos complejos integrando estándares internacionales con las realidades sociales y laborales de América Latina.",
@@ -120,7 +120,7 @@ export default function EquipoPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent" />
                     {/* País */}
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-3 py-1">
-                      <span className="text-base leading-none">{persona.bandera}</span>
+                      <Image src={persona.bandera} alt={persona.pais} width={20} height={14} className="rounded-sm object-cover" />
                       <span className="text-white/70 text-xs font-medium">{persona.pais}</span>
                     </div>
                   </div>
@@ -186,14 +186,14 @@ export default function EquipoPage() {
             </div>
             <div className="flex gap-6">
               {[
-                { bandera: "🇨🇴", pais: "Colombia", ciudad: "Bogotá" },
-                { bandera: "🇦🇷", pais: "Argentina", ciudad: "Buenos Aires" },
+                { bandera: "/colombia.webp", pais: "Colombia", ciudad: "Bogotá" },
+                { bandera: "/argentina.webp", pais: "Argentina", ciudad: "Buenos Aires" },
               ].map((loc) => (
                 <div
                   key={loc.pais}
                   className="flex flex-col items-center gap-3 bg-white border border-black/5 rounded-2xl px-8 py-6"
                 >
-                  <span className="text-4xl">{loc.bandera}</span>
+                  <Image src={loc.bandera} alt={loc.pais} width={48} height={32} className="rounded object-cover" />
                   <div className="text-center">
                     <p className="text-dark font-bold text-sm">{loc.pais}</p>
                     <p className="text-muted text-xs mt-0.5">{loc.ciudad}</p>
