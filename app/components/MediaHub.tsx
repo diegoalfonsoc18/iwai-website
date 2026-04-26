@@ -80,12 +80,11 @@ export default function MediaHub() {
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white">
-              Media Hub
+              INSIGHTS IWAI
             </h2>
           </div>
           <p className="text-white/40 text-sm max-w-xs leading-relaxed">
-            Podcast, fotos y recursos para seguir aprendiendo sobre
-            transformación organizacional.
+            Contenido para entender, decidir y transformar.
           </p>
         </div>
 

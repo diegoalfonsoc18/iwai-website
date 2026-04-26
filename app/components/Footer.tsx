@@ -27,7 +27,7 @@ export default function Footer() {
             href="mailto:contacto@grupoiwaiconsultores.com"
             className="flex-shrink-0 inline-flex items-center gap-3 bg-lima text-dark font-bold px-8 py-4 rounded-full hover:bg-lima/80 transition-colors whitespace-nowrap"
           >
-            CONVERSEMOS
+            CONTÁCTANOS
             <span className="w-6 h-6 bg-dark rounded-full flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                 <path

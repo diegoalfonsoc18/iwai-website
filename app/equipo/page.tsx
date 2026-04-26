@@ -6,32 +6,32 @@ import WhatsAppButton from "../components/WhatsAppButton";
 const equipo = [
   {
     nombre: "Soledad Cantero",
-    especialidad: "Transformación organizacional, cultura y gobernanza",
+    especialidad: "Transformación Organizacional, Cultura y Gestión del Cambio",
     pais: "Argentina",
     bandera: "🇦🇷",
     imagen: "/SoledadCantero.webp",
     descripcion:
-      "Ex viceministra de Ambiente en Argentina. Ha liderado procesos de política pública en escenarios de alta complejidad institucional, articulando gobernanza, cultura y liderazgo para impulsar transformaciones sistémicas con impacto real.",
+      "Soledad ha ocupado posiciones de liderazgo en el ámbito público argentino, incluyendo el cargo de viceministra de Ambiente, donde participó en la formulación e implementación de políticas públicas en un contexto de alta complejidad institucional y social. Su trayectoria combina experiencia en gestión pública, análisis de políticas y transformación organizacional con más de veinte años acompañando procesos de cambio en organizaciones de la región. Entiende que los cambios sostenibles requieren coherencia entre política pública, cultura organizacional y liderazgo.",
     areas: ["Transformación Organizacional", "Cultura", "Gobernanza"],
   },
   {
     nombre: "Luz Nayibe López Suárez",
-    especialidad: "Gobernanza pública y transformación institucional",
+    especialidad: "Gobernanza Pública, Transformación Institucional y Gestión Estratégica del Cambio",
     pais: "Colombia",
     bandera: "🇨🇴",
     imagen: "/NayibeLopez.webp",
     descripcion:
-      "Más de 20 años liderando procesos estratégicos en entidades como la DIAN y el Ministerio de Comercio. Especialista en convertir estructuras y marcos normativos en resultados concretos, gestionando organizaciones complejas con foco en ejecución.",
+      "Con más de veinte años de experiencia en el sector público, ha liderado procesos de transformación institucional en entidades de alta complejidad. Su paso por la DIAN y el Ministerio de Comercio, Industria y Turismo le ha permitido dirigir equipos numerosos, coordinar estructuras organizativas complejas y conducir procesos de cambio que requieren equilibrio entre visión estratégica y ejecución disciplinada. Cree que la gobernanza no es solo un marco normativo, sino una práctica cotidiana que fortalece instituciones cuando se construye con coherencia y sentido de propósito.",
     areas: ["Gobernanza Pública", "Transformación Institucional", "Ejecución Estratégica"],
   },
   {
     nombre: "Gloria Beatriz Gaviria",
-    especialidad: "Relaciones laborales, diálogo social y entorno internacional",
+    especialidad: "Gobernanza Laboral, Diálogo Social y Relaciones Institucionales Internacionales",
     pais: "Colombia",
     bandera: "🇨🇴",
     imagen: "/GloriaGaviria.webp",
     descripcion:
-      "Ex representante del Gobierno de Colombia ante la OIT. Referente en negociación, concertación y relaciones laborales en escenarios nacionales e internacionales, con capacidad para construir confianza en contextos de alta tensión institucional.",
+      "Ha dedicado su trayectoria al fortalecimiento del diálogo social y la construcción de relaciones laborales sostenibles. Su experiencia incluye roles estratégicos como Representante ante la OIT, jefe de Relaciones Exteriores y directora de Derechos Humanos del Ministerio de Trabajo de Colombia. Se ha consolidado como una de las voces con mayor conocimiento en diálogo social del país, con capacidad para construir consensos en contextos complejos integrando estándares internacionales con las realidades sociales y laborales de América Latina.",
     areas: ["Relaciones Laborales", "Diálogo Social", "Entorno Internacional"],
   },
 ];
@@ -152,6 +152,21 @@ export default function EquipoPage() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ── Grupo estratégico ampliado ────────────────────────────────── */}
+        <section className="bg-surface py-16 px-6">
+          <div className="max-w-7xl mx-auto max-w-3xl">
+            <div className="flex items-center gap-2 mb-5">
+              <span className="w-6 h-0.5 bg-lima" />
+              <span className="text-xs font-semibold text-muted tracking-widest uppercase">
+                Equipo ampliado
+              </span>
+            </div>
+            <p className="text-muted leading-relaxed">
+              El Grupo Estratégico se fortalece con la participación de profesionales con trayectorias sólidas en distintos campos especializados, incluyendo el ámbito jurídico, el análisis actuarial y enfoques interdisciplinarios relacionados con el bienestar organizacional y la seguridad y salud en el trabajo. Esta diversidad permite ampliar la mirada y abordar los desafíos institucionales desde diferentes niveles de análisis, integrando perspectivas estratégicas, técnicas y humanas según las particularidades de cada organización.
+            </p>
           </div>
         </section>
 

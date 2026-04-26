@@ -1,23 +1,23 @@
 const enfoque = [
   {
     numero: "01",
-    titulo: "Gobernanza y Arquitectura Organizacional",
-    desc: "Diseñamos estructuras claras y procesos que sostienen la estrategia.",
+    titulo: "Arquitectura Organizacional y Gobernanza",
+    desc: "Fortalecemos estructuras organizacionales para hacer efectiva la estrategia. Impulsamos liderazgo, toma de decisiones y equipos de alto desempeño, con foco en resultados sostenibles.",
   },
   {
     numero: "02",
     titulo: "Relaciones Laborales Estratégicas",
-    desc: "Promovemos el diálogo responsable y la prevención del conflicto para garantizar estabilidad.",
+    desc: "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto, la legalidad y la confianza.",
   },
   {
     numero: "03",
-    titulo: "Organizaciones Saludables y Cultura Ética",
-    desc: "Impulsamos el bienestar institucional y el liderazgo consciente para un desempeño sostenible.",
+    titulo: "Analítica avanzada para la toma de decisiones",
+    desc: "Sustentamos la toma de decisiones con evidencia técnica rigurosa. Integramos analítica avanzada para fortalecer la sostenibilidad financiera y la gestión del riesgo.",
   },
   {
     numero: "04",
-    titulo: "Servicios Actuariales",
-    desc: "Facilitamos la toma de decisiones basadas en evidencia y una gestión rigurosa del riesgo.",
+    titulo: "Asuntos Públicos y Desarrollo Empresarial",
+    desc: "Acompañamos organizaciones en la gestión de su entorno institucional. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave para generar valor sostenible.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function SobreNosotros() {
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-dark leading-tight">
-              Aliados que trabajan hombro a hombro en la ejecución.
+              Transformamos organizaciones haciendo que las cosas pasen.
             </h2>
           </div>
           <div className="flex flex-col gap-5 lg:pt-4">

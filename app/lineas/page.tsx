@@ -14,27 +14,35 @@ const valores = [
 const lineas = [
   {
     numero: "01",
-    titulo: "Arquitectura Organizacional",
+    titulo: "Arquitectura Organizacional y Gobernanza",
     descripcion:
-      "Diseñamos y transformamos estructuras organizacionales que responden a los objetivos estratégicos. Acompañamos la definición de modelos operativos, rediseño de procesos y fortalecimiento de capacidades institucionales.",
-    tags: ["Estructura", "Gobernanza", "Procesos", "Cambio"],
+      "Fortalecemos estructuras organizacionales para hacer efectiva la estrategia. Impulsamos liderazgo, toma de decisiones y equipos de alto desempeño, con foco en resultados sostenibles.",
+    tags: ["Rediseño organizacional", "Liderazgo", "Cultura y cambio", "Salud laboral", "Estrategia y ejecución"],
     imagen: "/cardOne.webp",
   },
   {
     numero: "02",
-    titulo: "Relaciones Laborales y Diálogo Social",
+    titulo: "Relaciones Laborales Estratégicas",
     descripcion:
-      "Gestionamos las relaciones entre la organización y sus colaboradores desde un enfoque estratégico. Facilitamos el diálogo social, la negociación colectiva y la construcción de entornos laborales sostenibles.",
-    tags: ["Cultura", "Negociación", "Bienestar", "Clima"],
+      "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto, la legalidad y la confianza.",
+    tags: ["Relaciones sindicales", "Derechos laborales", "Negociación colectiva", "Gestión de conflictos", "Asesoría jurídica"],
     imagen: "/cardTwo.webp",
   },
   {
     numero: "03",
-    titulo: "Servicios Actuariales",
+    titulo: "Analítica avanzada para la toma de decisiones",
     descripcion:
-      "Proveemos análisis actuarial aplicado a la gestión organizacional: valoración de pasivos laborales, análisis de riesgos y conectamos el desempeño financiero con la sostenibilidad de largo plazo.",
-    tags: ["Actuaría", "Riesgos", "Datos", "Sostenibilidad"],
+      "Sustentamos la toma de decisiones con evidencia técnica rigurosa. Integramos analítica avanzada para fortalecer la sostenibilidad financiera y la gestión del riesgo.",
+    tags: ["Pasivos pensionales", "VPAO", "Proyección financiera", "Gestión de riesgos", "Modelos actuariales"],
     imagen: "/cargThree.webp",
+  },
+  {
+    numero: "04",
+    titulo: "Asuntos Públicos y Desarrollo Empresarial",
+    descripcion:
+      "Acompañamos organizaciones en la gestión de su entorno institucional y el desarrollo de estrategias empresariales con impacto. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave para generar valor sostenible.",
+    tags: ["Relacionamiento con gobierno", "Asuntos públicos", "Posicionamiento institucional", "MIPYMES", "Sostenibilidad"],
+    imagen: "/cardOne.webp",
   },
 ];
 
@@ -136,7 +144,7 @@ export default function LineasPage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-14">
-              Tres áreas de especialización
+              Cuatro áreas de especialización
             </h2>
 
             <div className="flex flex-col gap-6">

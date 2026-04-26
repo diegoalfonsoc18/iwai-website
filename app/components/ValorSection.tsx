@@ -52,26 +52,6 @@ export default function ValorSection() {
 
           <div className="w-20 h-1 bg-lima rounded-full" />
 
-          {/* People stat */}
-          <div className="flex items-center gap-4">
-            <div className="flex -space-x-3">
-              {["bg-dark", "bg-lima", "bg-muted"].map((c, i) => (
-                <div
-                  key={i}
-                  className={`w-9 h-9 rounded-full border-2 border-surface ${c} flex items-center justify-center`}
-                >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <circle cx="7" cy="5" r="2.5" fill="white" fillOpacity="0.7" />
-                    <path d="M2 12c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="white" strokeOpacity="0.7" strokeWidth="1.2" strokeLinecap="round" />
-                  </svg>
-                </div>
-              ))}
-            </div>
-            <div>
-              <p className="font-bold text-dark">Presencia en Colombia y Argentina</p>
-              <p className="text-sm text-muted">con alcance regional</p>
-            </div>
-          </div>
 
           {/* Feature list */}
           <ul className="flex flex-col gap-5 mt-2">
@@ -106,9 +86,12 @@ export default function ValorSection() {
                       <path d="M5 1v2M5 7v2M1 5h2M7 5h2" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
                     </svg>
                   </span>
-                  <span className="text-xs font-bold text-dark/60 tracking-widest uppercase">
-                    Grupo IWAI
-                  </span>
+                  <div>
+                    <span className="text-xs font-bold text-dark/60 tracking-widest uppercase block">
+                      Grupo IWAI
+                    </span>
+                    <span className="text-[10px] text-dark/40">LATAM · 🇨🇴 Colombia · 🇦🇷 Argentina</span>
+                  </div>
                 </div>
 
                 <p className="text-dark text-3xl font-bold leading-tight mb-1">

@@ -47,8 +47,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-white/55 text-lg leading-relaxed max-w-md">
-            Nos convertimos en parte de tu organización para acompañar
-            transformaciones reales, con metodologías adaptadas a tu contexto.
+            No trabajamos desde la distancia, nos integramos como parte de su equipo, porque creemos que acompañar implica asumir el reto junto a quienes confían en nosotros.
           </p>
 
           {/* CTA */}
@@ -57,7 +56,7 @@ export default function Hero() {
               href="#contacto"
               className="inline-flex items-center gap-3 bg-white text-dark font-semibold text-sm px-7 py-4 rounded-full hover:bg-lima transition-colors duration-200"
             >
-              AGENDAR CONSULTA
+              CONTÁCTANOS
               <span className="w-6 h-6 bg-dark rounded-full flex items-center justify-center flex-shrink-0">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                   <path
@@ -91,11 +90,11 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-semibold">Grupo IWAI</p>
-                  <p className="text-white/35 text-[10px]">Consultoría Organizacional</p>
+                  <p className="text-white/35 text-[10px]">Consultoría y estrategia organizacional</p>
                 </div>
               </div>
-              <span className="text-[10px] font-medium text-lima bg-lima/10 px-2.5 py-1 rounded-full">
-                Colombia
+              <span className="text-[10px] font-medium text-lima bg-lima/10 px-2.5 py-1 rounded-full flex items-center gap-1">
+                🇨🇴 🇦🇷
               </span>
             </div>
 
@@ -104,8 +103,8 @@ export default function Hero() {
               {[
                 {
                   icon: "✦",
-                  valor: "95%",
-                  label: "de clientes satisfechos",
+                  valor: "Somos tejedores",
+                  label: "organizacionales y gestores de cambio",
                 },
                 {
                   icon: "✦",

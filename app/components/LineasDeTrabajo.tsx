@@ -3,39 +3,51 @@ import Image from "next/image";
 const lineas = [
   {
     numero: "01",
-    titulo: "Desarrollo Organizacional",
+    titulo: "Arquitectura Organizacional y Gobernanza",
     descripcion:
-      "Fortalecemos las capacidades internas alineando estructura, procesos y personas para alcanzar sus objetivos estratégicos de forma sostenible.",
+      "Fortalecemos estructuras organizacionales para hacer efectiva la estrategia. Impulsamos liderazgo, toma de decisiones y equipos de alto desempeño.",
     tags: [
-      { icono: "⬡", label: "Estructura" },
-      { icono: "⚙", label: "Procesos" },
-      { icono: "◈", label: "Alineación" },
+      { icono: "⬡", label: "Gobernanza" },
+      { icono: "⚙", label: "Rediseño" },
+      { icono: "◈", label: "Liderazgo" },
     ],
     imagen: "/cardOne.webp",
   },
   {
     numero: "02",
-    titulo: "Gestión del Cambio",
+    titulo: "Relaciones Laborales Estratégicas",
     descripcion:
-      "Acompañamos transformaciones asegurando que las personas sean el centro del cambio. Lideramos procesos de transición con metodologías probadas.",
+      "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto y la confianza.",
     tags: [
-      { icono: "↗", label: "Transformación" },
-      { icono: "◎", label: "Liderazgo" },
-      { icono: "✦", label: "Adopción" },
+      { icono: "↗", label: "Negociación" },
+      { icono: "◎", label: "Diálogo social" },
+      { icono: "✦", label: "Bienestar" },
     ],
     imagen: "/cardTwo.webp",
   },
   {
     numero: "03",
-    titulo: "Cultura y Clima Organizacional",
+    titulo: "Analítica avanzada para la toma de decisiones",
     descripcion:
-      "Diagnosticamos e intervenimos la cultura para construir entornos de alto desempeño, bienestar y sentido de pertenencia.",
+      "Sustentamos la toma de decisiones con evidencia técnica rigurosa. Integramos analítica avanzada para la sostenibilidad financiera y la gestión del riesgo.",
     tags: [
-      { icono: "◉", label: "Diagnóstico" },
-      { icono: "♡", label: "Bienestar" },
-      { icono: "★", label: "Alto desempeño" },
+      { icono: "◉", label: "Actuaría" },
+      { icono: "♡", label: "Riesgo" },
+      { icono: "★", label: "Sostenibilidad" },
     ],
     imagen: "/cargThree.webp",
+  },
+  {
+    numero: "04",
+    titulo: "Asuntos Públicos y Desarrollo Empresarial",
+    descripcion:
+      "Acompañamos organizaciones en la gestión de su entorno institucional. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave.",
+    tags: [
+      { icono: "⬡", label: "Asuntos públicos" },
+      { icono: "⚙", label: "Incidencia" },
+      { icono: "◈", label: "Territorio" },
+    ],
+    imagen: "/cardOne.webp",
   },
 ];
 
@@ -58,13 +70,13 @@ export default function LineasDeTrabajo() {
             </h2>
           </div>
           <p className="text-white/40 text-sm max-w-xs leading-relaxed">
-            Tres áreas especializadas que se integran para acompañar la
+            Cuatro áreas especializadas que se integran para acompañar la
             transformación completa de tu organización.
           </p>
         </div>
 
         {/* Cards — 3 columnas horizontales */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {lineas.map((linea) => (
             <article
               key={linea.numero}
