@@ -70,7 +70,7 @@ export default function EquipoPage() {
               <div className="flex items-center gap-2 mb-5">
                 <span className="w-6 h-0.5 bg-lima" />
                 <span className="text-xs font-semibold text-muted tracking-widest uppercase">
-                  Quiénes somos
+                  Equipo estratégico
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-dark leading-tight">
@@ -170,7 +170,7 @@ export default function EquipoPage() {
             <div className="flex items-center gap-2 mb-5">
               <span className="w-6 h-0.5 bg-lima" />
               <span className="text-xs font-semibold text-muted tracking-widest uppercase">
-                Equipo ampliado
+                Red de especialistas
               </span>
             </div>
             <p className="text-muted leading-relaxed">

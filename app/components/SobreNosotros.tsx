@@ -32,7 +32,7 @@ export default function SobreNosotros() {
             <div className="flex items-center gap-2 mb-5">
               <span className="w-6 h-0.5 bg-lima" />
               <span className="text-xs font-semibold text-muted tracking-widest uppercase">
-                Quiénes somos
+                En Grupo IWAI
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-dark leading-tight">

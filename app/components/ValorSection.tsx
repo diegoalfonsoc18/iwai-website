@@ -111,7 +111,7 @@ export default function ValorSection() {
                 </div>
 
                 {/* Países */}
-                <div className="flex gap-3">
+                <div className="flex gap-3 mb-8">
                   {[
                     { src: "/colombia.webp", pais: "Colombia", ciudad: "Bogotá" },
                     { src: "/argentina.webp", pais: "Argentina", ciudad: "Buenos Aires" },
@@ -126,16 +126,6 @@ export default function ValorSection() {
                   ))}
                 </div>
 
-                {/* CTA */}
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 bg-dark text-white text-xs font-semibold px-5 py-3 rounded-full hover:bg-dark/80 transition-colors self-start"
-                >
-                  Contáctanos
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 10L10 2M10 2H4.5M10 2v5.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
               </div>
             </div>
 

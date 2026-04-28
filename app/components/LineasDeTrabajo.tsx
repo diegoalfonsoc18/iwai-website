@@ -8,9 +8,10 @@ const lineas = [
     descripcion:
       "Fortalecemos estructuras organizacionales para hacer efectiva la estrategia. Impulsamos liderazgo, toma de decisiones y equipos de alto desempeño.",
     tags: [
-      { icono: "⬡", label: "Gobernanza" },
+      { icono: "⬡", label: "Gestión del cambio" },
       { icono: "⚙", label: "Rediseño" },
       { icono: "◈", label: "Liderazgo" },
+      { icono: "✦", label: "Bienestar" },
     ],
     imagen: "/cardOne.webp",
   },
@@ -20,9 +21,9 @@ const lineas = [
     descripcion:
       "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto y la confianza.",
     tags: [
-      { icono: "↗", label: "Negociación" },
-      { icono: "◎", label: "Diálogo social" },
-      { icono: "✦", label: "Bienestar" },
+      { icono: "⬡", label: "Gestión sindical" },
+      { icono: "⚙", label: "Formalización laboral" },
+      { icono: "◈", label: "Negociación" },
     ],
     imagen: "/cardTwo.webp",
   },
@@ -33,8 +34,8 @@ const lineas = [
       "Sustentamos la toma de decisiones con evidencia técnica rigurosa. Integramos analítica avanzada para la sostenibilidad financiera y la gestión del riesgo.",
     tags: [
       { icono: "◉", label: "Actuaría" },
-      { icono: "♡", label: "Riesgo" },
-      { icono: "★", label: "Sostenibilidad" },
+      { icono: "♡", label: "Gestión de riesgos" },
+      { icono: "★", label: "Modelos y simulación financiera" },
     ],
     imagen: "/cargThree.webp",
   },
@@ -44,9 +45,9 @@ const lineas = [
     descripcion:
       "Acompañamos organizaciones en la gestión de su entorno institucional. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave.",
     tags: [
-      { icono: "⬡", label: "Asuntos públicos" },
-      { icono: "⚙", label: "Incidencia" },
-      { icono: "◈", label: "Territorio" },
+      { icono: "⬡", label: "Relacionamiento con gobiernos reguladores" },
+      { icono: "⚙", label: "Sostenibilidad MiPymes" },
+      { icono: "◈", label: "Desarrollo de proyectos" },
     ],
     imagen: "/cardFour.webp",
   },
