@@ -64,28 +64,37 @@ export default function EquipoPage() {
         {/* ── Intro ─────────────────────────────────────────────────────── */}
         <section className="bg-surface py-24 px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
-            <div>
+
+            {/* Izquierda: eyebrow + titular */}
+            <div className="lg:sticky lg:top-28">
               <div className="flex items-center gap-2 mb-5">
                 <span className="w-6 h-0.5 bg-lima" />
                 <span className="text-xs font-semibold text-muted tracking-widest uppercase">
-                  Equipo estratégico
+                  Quiénes somos
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-dark leading-tight">
-                Liderazgo forjado en la práctica, no solo en la teoría.
+                Experiencia real.<br />
+                <span className="text-lima">Compromiso genuino.</span>
               </h2>
             </div>
-            <div className="flex flex-col gap-5 text-muted leading-relaxed">
-              <p>
-                Nuestro equipo estratégico ha liderado organizaciones complejas, enfrentando decisiones críticas, gestionando equipos numerosos y resolviendo desafíos de alto impacto.
+
+            {/* Derecha: 4 párrafos */}
+            <div className="flex flex-col gap-8">
+              <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
+                Nuestro trabajo nace de la experiencia acumulada y reconocida de un equipo profesional que ha vivido y gestionado contextos organizacionales exigentes, dinámicos y complejos. Conocemos las tensiones reales que enfrentan las organizaciones por cambios normativos, dinámicas humanas, estructurales y estratégicas, y entendemos que las soluciones solo funcionan cuando integran todas estas dimensiones.
               </p>
-              <p>
-                Esta experiencia nos permite acompañar a nuestros clientes con una comprensión real del liderazgo y la transformación organizacional.
+              <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
+                Somos una firma integral que entiende que los retos y desafíos institucionales no se pueden abordar desde disciplinas aisladas, sino desde una visión que conecta arquitectura organizacional, gobernanza, relaciones laborales, bienestar institucional y análisis técnico riguroso para fortalecer la sostenibilidad organizacional.
               </p>
-              <p>
-                Más que asesorar desde la distancia, trabajamos en estrecha colaboración para potenciar lo construido y guiar la evolución hacia resultados sostenibles.
+              <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
+                Por esto, nuestro compromiso va más allá de la recomendación: nos involucramos activamente, trabajando hombro a hombro con cada organización para acompañar procesos que requieren seriedad, rigor metodológico y sensibilidad humana.
+              </p>
+              <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
+                Creemos que el verdadero valor está en transformar la complejidad en claridad y la estrategia en acción. Por eso diseñamos e implementamos soluciones prácticas, ejecutables y sostenibles que permiten a las organizaciones avanzar con confianza y obtener resultados en tiempos oportunos.
               </p>
             </div>
+
           </div>
         </section>
 

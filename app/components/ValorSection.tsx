@@ -54,6 +54,9 @@ export default function ValorSection() {
 
           <div className="w-20 h-1 bg-lima rounded-full" />
 
+          <p className="text-muted leading-relaxed">
+            Acompañamos a organizaciones públicas y privadas que enfrentan desafíos complejos y requieren más que asesoría técnica tradicional; entendemos que necesitan aliados estratégicos capaces de comprender su realidad institucional, laboral y humana, y transformar esa comprensión en soluciones concretas que generen resultados.
+          </p>
 
           {/* Feature list */}
           <ul className="flex flex-col gap-5 mt-2">
@@ -78,45 +81,59 @@ export default function ValorSection() {
             {/* Main green card */}
             <div className="bg-lima rounded-3xl p-8 relative overflow-hidden">
               {/* Decorative circles */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-dark/10" />
-              <div className="absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-dark/10" />
+              <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-dark/8" />
+              <div className="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-dark/8" />
 
-              <div className="relative z-10">
-                <div className="flex items-center gap-2 mb-6">
-                  <span className="w-5 h-5 bg-dark rounded-full flex items-center justify-center">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path d="M5 1v2M5 7v2M1 5h2M7 5h2" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
-                    </svg>
-                  </span>
-                  <div>
-                    <span className="text-xs font-bold text-dark/60 tracking-widest uppercase block">
-                      Grupo IWAI
+              <div className="relative z-10 flex flex-col gap-6">
+
+                {/* Header */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 bg-dark rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M5 1v2M5 7v2M1 5h2M7 5h2" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
+                      </svg>
                     </span>
-                    <span className="text-[10px] text-dark/40 flex items-center gap-1">
-                      LATAM ·
-                      <Image src="/colombia.webp" alt="Colombia" width={14} height={10} className="rounded-sm object-cover inline" />
-                      Colombia ·
-                      <Image src="/argentina.webp" alt="Argentina" width={14} height={10} className="rounded-sm object-cover inline" />
-                      Argentina
+                    <span className="text-xs font-bold text-dark/60 tracking-widest uppercase">
+                      Grupo IWAI
                     </span>
                   </div>
                 </div>
 
-                <p className="text-dark text-3xl font-bold leading-tight mb-1">
-                  Consultoría
-                  <br />
-                  Estratégica
-                </p>
-                <p className="text-dark/60 text-sm mt-2 mb-8">
-                  Transformamos organizaciones desde adentro
-                </p>
+                {/* Headline */}
+                <div>
+                  <p className="text-dark text-2xl font-bold leading-tight">
+                    Firma LATAM
+                  </p>
+                  <p className="text-dark/55 text-sm mt-2 leading-relaxed">
+                    Presencia en Colombia y Argentina para toda la región.
+                  </p>
+                </div>
 
+                {/* Países */}
+                <div className="flex gap-3">
+                  {[
+                    { src: "/colombia.webp", pais: "Colombia", ciudad: "Bogotá" },
+                    { src: "/argentina.webp", pais: "Argentina", ciudad: "Buenos Aires" },
+                  ].map((loc) => (
+                    <div key={loc.pais} className="flex items-center gap-2 bg-dark/10 rounded-2xl px-3 py-2.5 flex-1">
+                      <Image src={loc.src} alt={loc.pais} width={22} height={16} className="rounded-sm object-cover flex-shrink-0" />
+                      <div>
+                        <p className="text-dark font-semibold text-xs">{loc.pais}</p>
+                        <p className="text-dark/50 text-[10px]">{loc.ciudad}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA */}
                 <a
                   href="#contacto"
-                  className="inline-flex items-center justify-center w-10 h-10 bg-dark rounded-full hover:bg-dark/80 transition-colors"
+                  className="inline-flex items-center gap-2 bg-dark text-white text-xs font-semibold px-5 py-3 rounded-full hover:bg-dark/80 transition-colors self-start"
                 >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M2 12L12 2M12 2H5M12 2v7" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  Contáctanos
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 10L10 2M10 2H4.5M10 2v5.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
               </div>
@@ -131,7 +148,7 @@ export default function ValorSection() {
               </div>
               <div>
                 <p className="text-xs font-bold text-dark">Asesoría personalizada</p>
-                <p className="text-xs text-muted">Agenda tu consulta gratis</p>
+                <p className="text-xs text-muted">Hablemos de tu organización</p>
               </div>
             </div>
           </div>

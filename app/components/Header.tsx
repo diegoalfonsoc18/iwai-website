@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
+  { label: "Quiénes Somos", href: "/quienes-somos" },
   { label: "Líneas de Trabajo", href: "/lineas" },
   { label: "Nuestro Equipo", href: "/equipo" },
   { label: "Contacto", href: "/contacto" },
