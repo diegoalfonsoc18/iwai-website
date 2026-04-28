@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white/55 text-lg leading-relaxed max-w-md">
+          <p className="text-white/90 text-lg leading-relaxed max-w-md">
             No trabajamos desde la distancia, nos integramos como parte de su equipo, porque creemos que acompañar implica asumir el reto junto a quienes confían en nosotros.
           </p>
 

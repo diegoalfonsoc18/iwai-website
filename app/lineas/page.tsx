@@ -42,7 +42,7 @@ const lineas = [
     descripcion:
       "Acompañamos organizaciones en la gestión de su entorno institucional y el desarrollo de estrategias empresariales con impacto. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave para generar valor sostenible.",
     tags: ["Relacionamiento con gobierno", "Asuntos públicos", "Posicionamiento institucional", "MIPYMES", "Sostenibilidad"],
-    imagen: "/cardOne.webp",
+    imagen: "/cardFour.webp",
   },
 ];
 
@@ -151,7 +151,8 @@ export default function LineasPage() {
               {lineas.map((linea) => (
                 <article
                   key={linea.numero}
-                  className="relative rounded-3xl overflow-hidden min-h-[280px] flex items-end group"
+                  id={linea.numero}
+                  className="relative rounded-3xl overflow-hidden min-h-[280px] flex items-end group scroll-mt-24"
                   style={{ backgroundColor: "#1f1f1f" }}
                 >
                   {/* Imagen */}

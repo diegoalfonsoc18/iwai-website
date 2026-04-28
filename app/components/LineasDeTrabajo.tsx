@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const lineas = [
   {
@@ -47,7 +48,7 @@ const lineas = [
       { icono: "⚙", label: "Incidencia" },
       { icono: "◈", label: "Territorio" },
     ],
-    imagen: "/cardOne.webp",
+    imagen: "/cardFour.webp",
   },
 ];
 
@@ -78,8 +79,12 @@ export default function LineasDeTrabajo() {
         {/* Cards — 3 columnas horizontales */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {lineas.map((linea) => (
-            <article
+            <Link
               key={linea.numero}
+              href={`/lineas#${linea.numero}`}
+              className="block"
+            >
+            <article
               className="relative rounded-2xl overflow-hidden h-[280px] flex items-end group cursor-pointer"
               style={{ backgroundColor: "#1f1f1f" }}
             >
@@ -122,17 +127,15 @@ export default function LineasDeTrabajo() {
                 </div>
 
                 {/* CTA */}
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 text-xs font-semibold text-lima hover:text-white transition-colors mt-1"
-                >
+                <span className="inline-flex items-center gap-2 text-xs font-semibold text-lima group-hover:text-white transition-colors mt-1">
                   Conocer más
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path d="M2 10L10 2M10 2H4.5M10 2v5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                </a>
+                </span>
               </div>
             </article>
+            </Link>
           ))}
         </div>
       </div>
