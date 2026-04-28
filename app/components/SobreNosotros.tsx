@@ -36,7 +36,7 @@ export default function SobreNosotros() {
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-dark leading-tight">
-              Transformamos organizaciones haciendo que las cosas pasen.
+              Transformamos organizaciones haciendo que las cosas pasen
             </h2>
           </div>
           <div className="flex flex-col gap-5 lg:pt-4">
