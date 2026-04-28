@@ -54,7 +54,7 @@ export default function Hero() {
           <div>
             <a
               href="#contacto"
-              className="inline-flex items-center gap-3 bg-white text-dark font-semibold text-sm px-7 py-4 rounded-full hover:bg-lima transition-colors duration-200"
+              className="inline-flex items-center gap-3 bg-lima text-dark font-semibold text-sm px-7 py-4 rounded-full hover:bg-lima/80 transition-colors duration-200"
             >
               CONTÁCTANOS
               <span className="w-6 h-6 bg-dark rounded-full flex items-center justify-center flex-shrink-0">

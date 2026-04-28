@@ -17,7 +17,7 @@ const lineas = [
     titulo: "Arquitectura Organizacional y Gobernanza",
     descripcion:
       "Fortalecemos estructuras organizacionales para hacer efectiva la estrategia. Impulsamos liderazgo, toma de decisiones y equipos de alto desempeño, con foco en resultados sostenibles.",
-    tags: ["Rediseño organizacional", "Liderazgo", "Cultura y cambio", "Salud laboral", "Estrategia y ejecución"],
+    tags: ["Gestión del cambio", "Rediseño", "Liderazgo", "Bienestar"],
     imagen: "/cardOne.webp",
   },
   {
@@ -25,7 +25,7 @@ const lineas = [
     titulo: "Relaciones Laborales Estratégicas",
     descripcion:
       "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto, la legalidad y la confianza.",
-    tags: ["Relaciones sindicales", "Derechos laborales", "Negociación colectiva", "Gestión de conflictos", "Asesoría jurídica"],
+    tags: ["Gestión sindical", "Formalización laboral", "Negociación"],
     imagen: "/cardTwo.webp",
   },
   {
@@ -33,7 +33,7 @@ const lineas = [
     titulo: "Analítica avanzada para la toma de decisiones",
     descripcion:
       "Sustentamos la toma de decisiones con evidencia técnica rigurosa. Integramos analítica avanzada para fortalecer la sostenibilidad financiera y la gestión del riesgo.",
-    tags: ["Pasivos pensionales", "VPAO", "Proyección financiera", "Gestión de riesgos", "Modelos actuariales"],
+    tags: ["Actuaría", "Gestión de riesgos", "Modelos y simulación financiera"],
     imagen: "/cargThree.webp",
   },
   {
@@ -41,7 +41,7 @@ const lineas = [
     titulo: "Asuntos Públicos y Desarrollo Empresarial",
     descripcion:
       "Acompañamos organizaciones en la gestión de su entorno institucional y el desarrollo de estrategias empresariales con impacto. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave para generar valor sostenible.",
-    tags: ["Relacionamiento con gobierno", "Asuntos públicos", "Posicionamiento institucional", "MIPYMES", "Sostenibilidad"],
+    tags: ["Relacionamiento con gobiernos reguladores", "Sostenibilidad MiPymes", "Desarrollo de proyectos"],
     imagen: "/cardFour.webp",
   },
 ];

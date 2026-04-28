@@ -50,12 +50,12 @@ export default function Header() {
         {/* CTA desktop */}
         <Link
           href="/contacto"
-          className="hidden md:flex items-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-dark/80 transition-colors"
+          className="hidden md:flex items-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full border border-dark/30 hover:bg-lima/80 transition-colors"
         >
           CONTACTO
-          <span className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
+          <span className="w-5 h-5 bg-dark/15 rounded-full flex items-center justify-center">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 8L8 2M8 2H3M8 2v5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
         </Link>
@@ -97,12 +97,12 @@ export default function Header() {
           <Link
             href="/contacto"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-center gap-2 bg-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-dark/80 transition-colors mt-2"
+            className="flex items-center justify-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-lima/80 transition-colors mt-2"
           >
             CONTACTO
-            <span className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
+            <span className="w-5 h-5 bg-dark/15 rounded-full flex items-center justify-center">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </Link>
