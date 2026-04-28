@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Líneas de Trabajo", href: "#lineas" },
-  { label: "Nuestro Equipo", href: "#equipo" },
-  { label: "Propuesta de Valor", href: "#valor" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Quiénes Somos", href: "/quienes-somos" },
+  { label: "Líneas de Trabajo", href: "/lineas" },
+  { label: "Nuestro Equipo", href: "/equipo" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 export default function Footer() {
@@ -106,7 +106,6 @@ export default function Footer() {
             <li className="flex gap-4 pt-2">
               {[
                 { label: "LinkedIn", href: "https://www.linkedin.com/company/grupo-iwai-consultores/" },
-                { label: "Instagram", href: "#" },
               ].map((red) => (
                 <a
                   key={red.label}

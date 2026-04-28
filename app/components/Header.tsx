@@ -50,7 +50,7 @@ export default function Header() {
         {/* CTA desktop */}
         <Link
           href="/contacto"
-          className="hidden md:flex items-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full border border-dark/30 hover:bg-lima/80 transition-colors"
+          className="hidden md:flex items-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-lima/80 transition-colors"
         >
           CONTACTO
           <span className="w-5 h-5 bg-dark/15 rounded-full flex items-center justify-center">
