@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Quiénes Somos", href: "/quienes-somos" },
   { label: "Líneas de Trabajo", href: "/lineas" },
   { label: "Nuestro Equipo", href: "/equipo" },
+  { label: "Insights", href: "/#insights" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -47,19 +48,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA desktop */}
-        <Link
-          href="/contacto"
-          className="hidden md:flex items-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-lima/80 transition-colors"
-        >
-          CONTACTO
-          <span className="w-5 h-5 bg-dark/15 rounded-full flex items-center justify-center">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
-        </Link>
-
         {/* Menu icon mobile */}
         <button
           onClick={() => setOpen(!open)}
@@ -94,18 +82,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contacto"
-            onClick={() => setOpen(false)}
-            className="flex items-center justify-center gap-2 bg-lima text-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-lima/80 transition-colors mt-2"
-          >
-            CONTACTO
-            <span className="w-5 h-5 bg-dark/15 rounded-full flex items-center justify-center">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path d="M2 8L8 2M8 2H3M8 2v5" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-          </Link>
         </nav>
       </div>
     </header>

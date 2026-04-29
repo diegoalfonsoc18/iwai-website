@@ -80,18 +80,15 @@ export default function EquipoPage() {
             </div>
 
             {/* Derecha: 4 párrafos */}
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6">
               <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
-                Nuestro trabajo nace de la experiencia acumulada y reconocida de un equipo profesional que ha vivido y gestionado contextos organizacionales exigentes, dinámicos y complejos. Conocemos las tensiones reales que enfrentan las organizaciones por cambios normativos, dinámicas humanas, estructurales y estratégicas, y entendemos que las soluciones solo funcionan cuando integran todas estas dimensiones.
+                Nuestro trabajo nace de la experiencia acumulada de un equipo profesional que ha vivido y gestionado contextos organizacionales exigentes, dinámicos y complejos. Conocemos las tensiones reales que enfrentan las organizaciones por cambios normativos, dinámicas humanas, estructurales y estratégicas, y entendemos que las soluciones solo funcionan cuando integran todas estas dimensiones.
               </p>
               <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
-                Somos una firma integral que entiende que los retos y desafíos institucionales no se pueden abordar desde disciplinas aisladas, sino desde una visión que conecta arquitectura organizacional, gobernanza, relaciones laborales, bienestar institucional y análisis técnico riguroso para fortalecer la sostenibilidad organizacional.
+                Somos una firma integral que entiende que los retos institucionales no se pueden abordar desde disciplinas aisladas, sino desde una visión que conecta arquitectura organizacional, gobernanza, relaciones laborales, bienestar institucional y análisis técnico riguroso para fortalecer la sostenibilidad organizacional.
               </p>
               <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
-                Por esto, nuestro compromiso va más allá de la recomendación: nos involucramos activamente, trabajando hombro a hombro con cada organización para acompañar procesos que requieren seriedad, rigor metodológico y sensibilidad humana.
-              </p>
-              <p className="text-dark/70 text-base leading-relaxed border-l-2 border-lima/40 pl-5">
-                Creemos que el verdadero valor está en transformar la complejidad en claridad y la estrategia en acción. Por eso diseñamos e implementamos soluciones prácticas, ejecutables y sostenibles que permiten a las organizaciones avanzar con confianza y obtener resultados en tiempos oportunos.
+                Nuestro compromiso va más allá de la recomendación: nos involucramos activamente, trabajando hombro a hombro con cada organización para acompañar procesos que requieren seriedad, rigor metodológico y sensibilidad humana. Creemos que el verdadero valor está en transformar la complejidad en claridad y la estrategia en acción.
               </p>
             </div>
 
