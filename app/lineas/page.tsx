@@ -11,7 +11,16 @@ const valores = [
   "Conectar el desempeño financiero y el análisis de datos con la sostenibilidad de largo plazo.",
 ];
 
-const lineas = [
+type Linea = {
+  numero: string;
+  titulo: string;
+  descripcion: string;
+  servicios?: string[];
+  tags: string[];
+  imagen: string;
+};
+
+const lineas: Linea[] = [
   {
     numero: "01",
     titulo: "Arquitectura Organizacional y Gobernanza",
@@ -24,7 +33,14 @@ const lineas = [
     numero: "02",
     titulo: "Relaciones Laborales Estratégicas",
     descripcion:
-      "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto, la legalidad y la confianza.",
+      "Acompañamos a las organizaciones a transformar la complejidad laboral en oportunidades estratégicas, alineando la gestión de personas con los objetivos del negocio. Con estándares internacionales y un enfoque preventivo, impulsamos entornos basados en confianza, legalidad y diálogo social.",
+    servicios: [
+      "Gestión estratégica de relaciones laborales y sindicales",
+      "Cumplimiento normativo y protección de derechos laborales",
+      "Negociación colectiva y fortalecimiento del diálogo social",
+      "Prevención y gestión de conflictos laborales",
+      "Asesoría jurídica laboral con enfoque estratégico",
+    ],
     tags: ["Gestión sindical", "Formalización laboral", "Negociación"],
     imagen: "/cardTwo.webp",
   },
@@ -174,6 +190,19 @@ export default function LineasPage() {
                     <span className="text-lima text-xs font-bold tracking-widest">{linea.numero}</span>
                     <h3 className="text-white text-2xl md:text-3xl font-bold leading-snug">{linea.titulo}</h3>
                     <p className="text-white/55 text-sm leading-relaxed max-w-sm">{linea.descripcion}</p>
+                    {linea.servicios && (
+                      <div className="mt-1">
+                        <p className="text-white/40 text-xs font-semibold tracking-widest uppercase mb-2">Nuestros servicios</p>
+                        <ul className="flex flex-col gap-1.5">
+                          {linea.servicios.map((s, i) => (
+                            <li key={i} className="flex items-start gap-2 text-white/60 text-xs leading-relaxed">
+                              <span className="text-lima mt-0.5 flex-shrink-0">✦</span>
+                              {s}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       {linea.tags.map((tag) => (
                         <span key={tag} className="text-xs font-medium text-white/60 bg-white/10 border border-white/10 px-3 py-1.5 rounded-full">
