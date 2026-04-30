@@ -130,7 +130,7 @@ export default function ValorSection() {
             </div>
 
             {/* Floating mini card */}
-            <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3">
+            <a href="/contacto" className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 hover:shadow-2xl transition-shadow">
               <div className="w-9 h-9 bg-surface rounded-full flex items-center justify-center">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M8 2l1.8 3.6L14 6.3l-3 2.9.7 4.1L8 11.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L8 2Z" fill="#C8FF3D" />
@@ -140,7 +140,7 @@ export default function ValorSection() {
                 <p className="text-xs font-bold text-dark">Asesoría personalizada</p>
                 <p className="text-xs text-muted">Hablemos de tu organización</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
