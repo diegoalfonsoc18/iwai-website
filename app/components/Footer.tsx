@@ -102,10 +102,14 @@ export default function Footer() {
                 contacto@grupoiwaiconsultores.com
               </a>
             </li>
-            <li>Colombia</li>
+            <li className="flex items-center gap-2">
+              <Image src="/colombia.webp" alt="Colombia" width={28} height={20} className="rounded-sm object-cover" />
+              <Image src="/argentina.webp" alt="Argentina" width={28} height={20} className="rounded-sm object-cover" />
+            </li>
             <li className="flex gap-4 pt-2">
               {[
                 { label: "LinkedIn", href: "https://www.linkedin.com/company/grupo-iwai-consultores/" },
+                { label: "Instagram", href: "https://www.instagram.com/grupoiwaiconsultores/" },
               ].map((red) => (
                 <a
                   key={red.label}
