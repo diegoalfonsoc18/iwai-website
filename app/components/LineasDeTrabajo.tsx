@@ -19,7 +19,7 @@ const lineas = [
     numero: "02",
     titulo: "Relaciones Laborales Estratégicas",
     descripcion:
-      "Acompañamos organizaciones en la gestión estratégica de sus relaciones laborales. Promovemos entornos sostenibles basados en el respeto y la confianza.",
+      "Acompañamos a las organizaciones a transformar la complejidad laboral en oportunidades estratégicas, alineando la gestión de personas con los objetivos del negocio.",
     tags: [
       { icono: "⬡", label: "Gestión sindical" },
       { icono: "⚙", label: "Formalización laboral" },
