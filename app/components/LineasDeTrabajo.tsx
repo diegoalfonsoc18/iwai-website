@@ -45,7 +45,7 @@ const lineas = [
     descripcion:
       "Acompañamos organizaciones en la gestión de su entorno institucional. Fortalecemos el posicionamiento, la incidencia y la articulación con actores clave.",
     tags: [
-      { icono: "⬡", label: "Relacionamiento con gobiernos reguladores" },
+      { icono: "⬡", label: "Relacionamiento con gobiernos y reguladores" },
       { icono: "⚙", label: "Sostenibilidad MiPymes" },
       { icono: "◈", label: "Desarrollo de proyectos" },
     ],
@@ -55,9 +55,11 @@ const lineas = [
 
 export default function LineasDeTrabajo() {
   return (
-    <section id="lineas" className="py-28 px-6" style={{ backgroundColor: "#181818" }}>
+    <section
+      id="lineas"
+      className="py-28 px-6"
+      style={{ backgroundColor: "#181818" }}>
       <div className="max-w-7xl mx-auto">
-
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div>
@@ -83,59 +85,64 @@ export default function LineasDeTrabajo() {
             <Link
               key={linea.numero}
               href={`/lineas#${linea.numero}`}
-              className="block"
-            >
-            <article
-              className="relative rounded-2xl overflow-hidden h-[280px] flex items-end group cursor-pointer"
-              style={{ backgroundColor: "#1f1f1f" }}
-            >
-              {/* Imagen de fondo */}
-              <div className="absolute inset-0">
-                <Image
-                  src={linea.imagen}
-                  alt={linea.titulo}
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                />
-                {/* Gradient fade inferior */}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(to top, #1f1f1f 35%, #1f1f1faa 60%, transparent 100%)",
-                  }}
-                />
-              </div>
-
-              {/* Contenido */}
-              <div className="relative z-10 p-5 flex flex-col gap-2 w-full">
-                <span className="text-lima text-xs font-bold tracking-widest">
-                  {linea.numero}
-                </span>
-                <h3 className="text-white text-lg font-bold leading-snug">
-                  {linea.titulo}
-                </h3>
-                <div className="flex flex-wrap gap-1.5 mt-1">
-                  {linea.tags.map((tag) => (
-                    <span
-                      key={tag.label}
-                      className="flex items-center gap-1 text-[11px] font-medium text-white/60 bg-white/10 border border-white/10 px-2.5 py-1 rounded-full"
-                    >
-                      <span className="text-lima text-[9px]">{tag.icono}</span>
-                      {tag.label}
-                    </span>
-                  ))}
+              className="block">
+              <article
+                className="relative rounded-2xl overflow-hidden h-[280px] flex items-end group cursor-pointer"
+                style={{ backgroundColor: "#1f1f1f" }}>
+                {/* Imagen de fondo */}
+                <div className="absolute inset-0">
+                  <Image
+                    src={linea.imagen}
+                    alt={linea.titulo}
+                    fill
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Gradient fade inferior */}
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to top, #1f1f1f 35%, #1f1f1faa 60%, transparent 100%)",
+                    }}
+                  />
                 </div>
 
-                {/* CTA */}
-                <span className="inline-flex items-center gap-2 text-xs font-semibold text-lima group-hover:text-white transition-colors mt-1">
-                  Conocer más
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 10L10 2M10 2H4.5M10 2v5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </article>
+                {/* Contenido */}
+                <div className="relative z-10 p-5 flex flex-col gap-2 w-full">
+                  <span className="text-lima text-xs font-bold tracking-widest">
+                    {linea.numero}
+                  </span>
+                  <h3 className="text-white text-lg font-bold leading-snug">
+                    {linea.titulo}
+                  </h3>
+                  <div className="flex flex-wrap gap-1.5 mt-1">
+                    {linea.tags.map((tag) => (
+                      <span
+                        key={tag.label}
+                        className="flex items-center gap-1 text-[11px] font-medium text-white/60 bg-white/10 border border-white/10 px-2.5 py-1 rounded-full">
+                        <span className="text-lima text-[9px]">
+                          {tag.icono}
+                        </span>
+                        {tag.label}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* CTA */}
+                  <span className="inline-flex items-center gap-2 text-xs font-semibold text-lima group-hover:text-white transition-colors mt-1">
+                    Conocer más
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path
+                        d="M2 10L10 2M10 2H4.5M10 2v5.5"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </article>
             </Link>
           ))}
         </div>
