@@ -3,9 +3,9 @@ import Image from "next/image";
 import Header from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Nuestro Equipo",
+  title: "Nuestro Equipo | Especialistas en Consultoría Organizacional",
   description:
-    "Conoce al equipo estratégico de Grupo IWAI Consultores. Especialistas en consultoría organizacional, relaciones laborales, analítica y asuntos públicos en Colombia y Argentina.",
+    "Conoce al equipo de Grupo IWAI Consultores. Especialistas en consultoría organizacional, relaciones laborales estratégicas, analítica avanzada y asuntos públicos con presencia en Colombia y Argentina.",
   alternates: { canonical: "https://www.grupoiwaiconsultores.com/equipo" },
 };
 import Footer from "../components/Footer";

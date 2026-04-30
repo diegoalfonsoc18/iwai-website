@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Quiénes Somos",
+  title: "Quiénes Somos | Firma de Consultoría Organizacional en Colombia",
   description:
-    "Conoce a Grupo IWAI Consultores: firma de consultoría organizacional con presencia en Colombia y Argentina. Conocimiento técnico, experiencia práctica y visión internacional.",
+    "Conoce a Grupo IWAI Consultores: firma de consultoría organizacional con presencia en Colombia y Argentina. Conocimiento técnico, experiencia práctica y visión internacional al servicio de organizaciones públicas y privadas.",
   alternates: { canonical: "https://www.grupoiwaiconsultores.com/quienes-somos" },
 };
 import Footer from "../components/Footer";

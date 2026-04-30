@@ -39,10 +39,10 @@ export const metadata: Metadata = {
       "Firma de consultoría organizacional con presencia en Colombia y Argentina. Transformamos organizaciones desde adentro.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/hero-iwai-workshop-final.jpg",
         width: 1200,
         height: 630,
-        alt: "Grupo IWAI Consultores",
+        alt: "Grupo IWAI Consultores — Taller organizacional",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Grupo IWAI Consultores | Consultoría Organizacional",
     description:
       "Firma de consultoría organizacional con presencia en Colombia y Argentina.",
-    images: ["/og-image.jpg"],
+    images: ["/hero-iwai-workshop-final.jpg"],
   },
   robots: {
     index: true,

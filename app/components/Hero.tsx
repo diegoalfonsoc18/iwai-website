@@ -47,7 +47,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-white/90 text-lg leading-relaxed max-w-md">
-            No trabajamos desde la distancia, nos integramos como parte de su equipo, porque creemos que acompañar implica asumir el reto junto a quienes confían en nosotros.
+            Consultoría organizacional que va más allá de la asesoría técnica. Nos integramos como parte de su equipo para asumir el reto junto a quienes confían en nosotros.
           </p>
 
           {/* CTA */}

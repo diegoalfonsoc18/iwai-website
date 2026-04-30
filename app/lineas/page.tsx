@@ -3,9 +3,9 @@ import Image from "next/image";
 import Header from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Líneas de Trabajo",
+  title: "Líneas de Trabajo | Consultoría en Gobernanza, Relaciones Laborales y Asuntos Públicos",
   description:
-    "Cuatro áreas de especialización: Arquitectura Organizacional y Gobernanza, Relaciones Laborales Estratégicas, Analítica Avanzada para la toma de decisiones, y Asuntos Públicos y Desarrollo Empresarial.",
+    "Servicios de consultoría organizacional en cuatro áreas: Arquitectura Organizacional y Gobernanza, Relaciones Laborales Estratégicas, Analítica Avanzada para la toma de decisiones, y Asuntos Públicos y Desarrollo Empresarial en Colombia y Argentina.",
   alternates: { canonical: "https://www.grupoiwaiconsultores.com/lineas" },
 };
 import Footer from "../components/Footer";
