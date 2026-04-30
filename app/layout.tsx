@@ -68,6 +68,38 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Grupo IWAI Consultores y Asesores Especializados S.A.S.",
+  alternateName: "Grupo IWAI Consultores",
+  url: "https://www.grupoiwaiconsultores.com",
+  logo: "https://www.grupoiwaiconsultores.com/iwaiBlackLogo.png",
+  description:
+    "Firma de consultoría organizacional con presencia en Colombia y Argentina. Especializados en gobernanza, relaciones laborales, analítica avanzada y asuntos públicos.",
+  email: "contacto@grupoiwaiconsultores.com",
+  areaServed: ["Colombia", "Argentina", "América Latina"],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bogotá",
+    addressCountry: "CO",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/grupo-iwai-consultores/",
+    "https://www.instagram.com/grupoiwaiconsultores/",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Líneas de Consultoría",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Arquitectura Organizacional y Gobernanza" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Relaciones Laborales Estratégicas" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Analítica Avanzada para la Toma de Decisiones" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Asuntos Públicos y Desarrollo Empresarial" } },
+    ],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,7 +107,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${dmSans.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
