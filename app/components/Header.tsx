@@ -50,7 +50,7 @@ export default function Header() {
         {/* Insights link — desktop only */}
         <Link
           href="/#insights"
-          className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-dark transition-colors border border-black/20 rounded-full px-4 py-1.5 hover:border-lima hover:bg-lima/10"
+          className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-white bg-dark rounded-full px-4 py-1.5 hover:bg-dark/80 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
             <circle cx="6" cy="6" r="5" fill="#C8FF3D" stroke="#C8FF3D" strokeWidth="0.5"/>
@@ -98,7 +98,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 text-sm font-semibold text-dark py-1"
           >
-            <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
+            <svg width="44" height="44" viewBox="0 0 12 12" fill="none">
               <circle cx="6" cy="6" r="5" fill="#C8FF3D" stroke="#C8FF3D" strokeWidth="0.5"/>
               <path d="M5 4.2l3.5 1.8L5 7.8V4.2z" fill="#0F0F0F"/>
             </svg>
