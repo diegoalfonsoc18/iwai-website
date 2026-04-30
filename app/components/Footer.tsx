@@ -128,11 +128,13 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-6 py-5 pb-24 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-white/20 text-xs">
             © {new Date().getFullYear()} Grupo IWAI Consultores y Asesores Especializados S.A.S. Todos los derechos reservados.
           </p>
-          <p className="text-white/20 text-xs">Bogotá, Colombia</p>
+          <a href="/privacidad" className="text-white/20 text-xs hover:text-white/40 transition-colors">
+            Política de Privacidad
+          </a>
         </div>
       </div>
     </footer>
