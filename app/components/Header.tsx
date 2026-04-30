@@ -48,7 +48,7 @@ export default function Header() {
         </nav>
 
         {/* Insights link — desktop only */}
-        <Link
+        <a
           href="/#insights"
           className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-white bg-dark rounded-full px-4 py-1.5 hover:bg-dark/80 transition-colors"
         >
@@ -57,7 +57,7 @@ export default function Header() {
             <path d="M5 4.2l3.5 1.8L5 7.8V4.2z" fill="#0F0F0F"/>
           </svg>
           Insights
-        </Link>
+        </a>
 
         {/* Menu icon mobile */}
         <button
@@ -93,7 +93,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
+          <a
             href="/#insights"
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 text-sm font-semibold text-dark py-1"
@@ -103,7 +103,7 @@ export default function Header() {
               <path d="M5 4.2l3.5 1.8L5 7.8V4.2z" fill="#0F0F0F"/>
             </svg>
             Insights
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
