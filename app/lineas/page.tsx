@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../components/Header";
+
+export const metadata: Metadata = {
+  title: "Líneas de Trabajo",
+  description:
+    "Cuatro áreas de especialización: Arquitectura Organizacional y Gobernanza, Relaciones Laborales Estratégicas, Analítica Avanzada para la toma de decisiones, y Asuntos Públicos y Desarrollo Empresarial.",
+  alternates: { canonical: "https://www.grupoiwaiconsultores.com/lineas" },
+};
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 

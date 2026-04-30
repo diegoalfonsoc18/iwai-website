@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../components/Header";
+
+export const metadata: Metadata = {
+  title: "Nuestro Equipo",
+  description:
+    "Conoce al equipo estratégico de Grupo IWAI Consultores. Especialistas en consultoría organizacional, relaciones laborales, analítica y asuntos públicos en Colombia y Argentina.",
+  alternates: { canonical: "https://www.grupoiwaiconsultores.com/equipo" },
+};
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 

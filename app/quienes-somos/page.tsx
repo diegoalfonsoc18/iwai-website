@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
+
+export const metadata: Metadata = {
+  title: "Quiénes Somos",
+  description:
+    "Conoce a Grupo IWAI Consultores: firma de consultoría organizacional con presencia en Colombia y Argentina. Conocimiento técnico, experiencia práctica y visión internacional.",
+  alternates: { canonical: "https://www.grupoiwaiconsultores.com/quienes-somos" },
+};
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
