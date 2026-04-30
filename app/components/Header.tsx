@@ -98,7 +98,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 text-sm font-semibold text-dark py-1"
           >
-            <svg width="44" height="44" viewBox="0 0 12 12" fill="none">
+            <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
               <circle cx="6" cy="6" r="5" fill="#C8FF3D" stroke="#C8FF3D" strokeWidth="0.5"/>
               <path d="M5 4.2l3.5 1.8L5 7.8V4.2z" fill="#0F0F0F"/>
             </svg>
